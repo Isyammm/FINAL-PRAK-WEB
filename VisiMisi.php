@@ -1,0 +1,175 @@
+<?php
+$base_url = "http://localhost/perpustakaan_man1_aljamaly/";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vsi Misi</title>
+    <link rel="stylesheet" href="<?= $base_url ?>CSS/style.css">
+    <script src="<?= $base_url ?>JS/javascript.js" defer></script>
+    
+    <!-- remix icon link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script:wght@400;700&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
+
+    <script
+      src="https://kit.fontawesome.com/c1df782baf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
+</head>
+<body>
+ 
+<header class="header">
+        <div class="logo">
+          <img src="img/LogoMansa1.png" alt="Coffee Shop Logo" />
+          <div>
+            <p>AL <span>JAMALY</span></p>
+          </div>
+        </div>
+    
+        <nav class="navbar">
+          <a href="index.php#home" class="nav-link">Beranda</a>
+          <div class="dropdown">
+            <button class="dropbtn">Profil 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="index.php#about">Profil</a>
+                <a href="VisiMisi.php" >Visi Misi</a>
+                <a href="strukturOrganisasi.php" >Struktur Organisasi</a>
+            </div>
+        </div>
+        
+        <a href="index.php#Services" class="nav-link">Layanan</a>
+        
+        <div class="dropdown">
+            <button class="dropbtn">E-Pustaka 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="BukuPelajaran.php" >Buku Pelajaran</a>
+                <a href="bukuCerita.php" >Buku Digital</a>
+            </div> 
+        </div>
+        
+          <a href="index.php#contac" class="nav-link">Contact</a>
+        </nav>
+    
+        <div class="icons">
+          <div class="ordernow"><a href="login.php">Login</a></div>
+          <div id="menubar" class="fas fa-bars"></div>
+        </div>
+      </header>
+      
+  
+    <!-- About section -->
+    <div class="main-about" id="about">
+        <div class="main-inner-about">
+          <h1>VISI <span> MISI </span></h1>
+          <h2>"AL-JAHIZ MANSA LIBRARY"</h1>
+          <h3>Visi</h1>
+          <p class="about-description">
+            Perpustakaan Man 1 Sinjai Mewujudkan Perpustakaan Terpadu Dengan Berbasis Teknologi Informasi dan Membangun Generasi yang Kaya Ilmu dan Wawasan Melalui Membaca
+          </p>
+          <h3>Misi</h2>
+        </div>
+  
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content" data-aos="fade-right">
+              <h3>1. </h3>
+              <p>
+                Meningkatkan Profisionalisme Kerja
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content" data-aos="fade-left">
+              <h3>2. </h3>
+              <p>
+                Memperbaiki Sarana dan Prasarana
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content" data-aos="fade-right">
+              <h3>3. </h3>
+              <p>
+                Meningkatkan Pelayanan
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content" data-aos="fade-left">
+              <h3>4. </h3>
+              <p>
+                Memudahkan Pengembangan Informasi Untuk Meningkatkan Ilmu Pengetahuan dan Keterampilan
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About section ended -->
+
+      <!-- Halaman Footer -->
+      <section id="footer">
+        <div>
+            <footer>
+                <div class="footer-main">
+                        <img src="../img/LogoMansa2.png" alt="Logo">            
+
+                    <div class="footer-media">
+                        <h3>Sosial Media</h3>
+                        <p><a href="">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                        <a href=""><i class="ri-instagram-fill"></i></a>
+                        <a href=""><i class="ri-facebook-box-fill"></i></a>
+                        <a href=""><i class="ri-tiktok-fill"></i></a></p>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <div>
+                            <h3>Contact</h3>
+                            <p><i class="ri-phone-line">082346874142</i></p>
+                            <p><i class="ri-mail-line">man1sinjai@gmail.com</i></p>
+                            <p><i class="ri-school-line">Alamat Jalan, JL. Baronang 
+                                <br>Kel. Lappan Kec. Sinjai Utara</i></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+        </section>
+        <div  class="copyright">
+            <p> &copy 2024 Man satu Sinjai by nr_faiqtunnis</p>
+        </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+    </script>
+</body>
+</html>

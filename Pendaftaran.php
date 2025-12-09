@@ -1,0 +1,144 @@
+<?php
+require 'config/DataBase.php';
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Box Icon link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- remix icon link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script:wght@400;700&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body>
+
+    <!-- Halaman Pendaftaran Anggota -->
+
+    <header class="header">
+        <div class="logo">
+          <img src="img/LogoMansa1.png" alt="Coffee Shop Logo" />
+          <div>
+            <p>AL <span>JAMALY</span></p>
+          </div>
+        </div>
+  
+        <nav class="navbar">
+          <a href="home.html#home" class="nav-link">Home</a>
+          <a href="home.html#about" class="nav-link">About</a>
+          <a href="home.html#Services" class="nav-link">Layanan</a>
+          <a href="BukuPelajaran.html" class="nav-link">E-Pustaka</a>
+          <a href="home.html#contac" class="nav-link">Contact</a>
+        </nav>
+  
+        <div class="icons">
+          <div class="ordernow"><a href="login.html">Login</a></div>
+          <div id="menubar" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+     <div>
+            <div class="header-text">
+                <h4>Pendaftaran Kartu Perpustakaan </h4>
+                <p>Ikuti langkah pendaftaran akun berikut ini. Isilah data dengan benar.</p>
+            </div>
+
+        </div>
+     </div>
+
+     <section>
+        <div class="form-pendaftaran">
+            <div class="form-main">
+                <form action="proses_pendaftaran.php" method="POST" enctype="multipart/form-data">
+                    
+                    <label for="inputnama">Nama</label><br>
+                    <input type="text" id="inputnama" name="nama" placeholder="Masukkan Nama Lengkap Anda" required><br>
+
+                    <label for="inputnis">Nomor Identitas(NIS)</label><br>
+                    <input type="nomor" name="nis" id="nis" placeholder="Masukkan Nomor Identitas Anda" required><br>
+
+                    <label for="inputtanggallahir">Tanggal Lahir</label><br>
+                    <input type="date" name="tanggal_lahir" id="tanggallahir" placeholder="Masukkan Tanggal Lahir Anda" required><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Masukkan Email Anda" required><br>
+                    
+                    <label for="nomor">Password</label><br>
+                    <input type="password" name="Password" id="nomor" placeholder="Masukkan Password" required><br>
+
+                    <label for="nomor">Konfirmasi Password</label><br>
+                    <input type="password" name="password" id="password" placeholder="Konfirmasi Password " required><br>
+
+                    <label for="foto">Upload foto</label> <br>
+                    <input type="file" name="foto" id="foto"  accept=".jpg,.jpeg,.png" required><br>
+                    
+                    <button type="submit">Kirim</button><br>
+                </form>
+            </div>
+
+            <div class="form-img">
+                <img src="img/gambar1.png" alt="">
+            </div>
+
+        </div>
+     </section>
+    
+     <!-- Halaman Footer -->
+     <section>
+        <div>
+            <footer>
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <img src="../img/LogoMansa2.png" alt="Logo">
+                        <div>
+                            <p>Al-Jamaly</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="footer-media">
+                        <h3>Sosial Media</h3>
+                        <p><a href=""><i class="ri-youtube-fill"></i></a><a href=""><i class="ri-instagram-fill"></i></a><a href=""><i class="ri-facebook-box-fill"></i></a><a href=""><i class="ri-tiktok-fill"></i></a></p>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <div>
+                            <h3>Contact</h3>
+                            <p><i class="ri-phone-line">082346874142</i></p>
+                            <p><i class="ri-mail-line">man1sinjai@gmail.com</i></p>
+                            <p><i class="ri-school-line">Alamat Jalan, JL. BARONANG TAPPEE KEL. LAPPA KEC. SINJAI UTARART RW. Desa/Kelurahan, Lappa. Kecamatan, Kec. Sinjai Utara.</i></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+        </div>
+   </section>
+    <div  class="copyright">
+        <p>  2024 &copy Man satu Sinjai nr_faiqtunnis</p>
+    </div>
+</body>
+</html>

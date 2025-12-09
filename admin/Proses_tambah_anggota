@@ -1,0 +1,47 @@
+<?php
+// Mulai sesi
+session_start();
+
+// Koneksi ke database
+$koneksi = new mysqli("localhost", "root", "", "perpustakaan_man1_aljamaly");
+
+// Cek koneksi
+if ($koneksi->connect_error) {
+    die("Koneksi gagal: " . $koneksi->connect_error);
+}
+
+// Cek apakah form telah disubmit
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nama = $_POST['nama'];
+    $nis = $_POST['nis'];
+    $email = $_POST['email'];
+    $foto = "";
+
+    // Cek apakah ada file yang diunggah
+    if (!empty($_FILES['foto']['name'])) {
+        $foto_name = basename($_FILES['foto']['name']);
+        $target_dir = "../img/uploads/";
+        $target_file = $target_dir . $foto_name;
+
+        // Pindahkan file yang diunggah ke folder target
+        if (move_uploaded_file($_FILES['foto']['tmp_name'], $target_file)) {
+            $foto = $foto_name;
+        }
+    }
+
+    // Simpan data ke database menggunakan prepared statement
+    $stmt = $koneksi->prepare("INSERT INTO anggota (nama, nis, email, foto) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssss", $nama, $nis, $email, $foto);
+
+    if ($stmt->execute()) {
+        header("Location: dataAnggota.php?status=success");
+        exit();
+    } else {
+        echo "Error: " . $stmt->error;
+    }
+
+    $stmt->close();
+}
+
+$koneksi->close();
+?>

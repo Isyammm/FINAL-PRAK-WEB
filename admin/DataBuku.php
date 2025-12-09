@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBuku</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    
+    <!-- remix icon link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script:wght@400;700&family=Playwrite+AU+SA+Guides&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <style>
+         @media (max-width: 768px) {
+            .header h1 {
+                font-size: 20px;
+            }
+            .btn-add {
+                font-size: 12px;
+                padding: 8px 16px;
+            }
+            table th, table td {
+                padding: 8px;
+            }
+            .pagination span {
+                font-size: 12px;
+            }
+            .pagination .page-numbers li a {
+                padding: 4px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar-dashboard">
+        <div class="profile-dashboard">
+            <img src="../img/IMG_20230324_215747_185.jpg" alt="">
+            <div class="name">Nur Faiqatunnisa</div>
+            <div class="role">Administrator</div>
+       </div>
+       <ul class="nav-dashboard">
+            <li><a href="dashboard.html">Dashboard</li>
+            <li><a href="DataBuku.html">Kelolah Data Buku</li>
+            <li><a href="dataAnggota.html">Kelolah Data Anggota</li>
+            <li><a href="#">Sirkulasi</a></li>
+            <li><a href="#">Log Data</a></li>
+            <li class="nav-header">SETTING</li>
+            <!-- <li><a href="#">Pengguna Sistem</a></li> -->
+            <li><a href="../home.html">Logout</a></li>
+       </ul>
+    </div>
+                         
+    <div class="main-content-dashboard">
+        <div class="header-dashboard">
+            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+            <div class="title">Sistem Informasi Perpustakaan</div>
+        </div>
+
+        <div class="content-DataBuku">
+            <div class="Judul-databuku">
+                <h2>Data Buku</h2>
+            </div>
+    
+            <div class="AddDataBuku">
+                <button class="btn-tambah-buku"><i class="ri-add-fill"></i>Tambah Data Buku</button>
+            </div>
+    
+            <div class="Search-DataBuku">
+                <label for="">Search:</label>
+                <input type="text">
+            </div>
+    
+            <div class="Tabel-Buku">
+                <table >
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Gambar</th>
+                            <th>Judul Buku</th>
+                            <th>Pengarang</th>
+                            <th>Penerbit</th>
+                            <th>Kelola</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td class="nomor">1</td>
+                            <td><img src=" ../img/SampulBuku/Al-Qurab-hadis-X.png" alt=""></td>
+                            <td>Al-qura'an Hadist X</td>
+                            <td>Pengarang</td>
+                            <td>Penerbit</td>
+                            <td>
+                                <button class="btn-edit"><i class="ri-edit-box-line"></i></button>
+                                <button class="btn-delete"><i class="ri-delete-bin-6-fill"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nomor">2</td>
+                            <td><img src=" ../img/SampulBuku/BHS-Arab-XI.png" alt=""></td>
+                            <td>Al-qura'an Hadist X</td>
+                            <td>Pengarang</td>
+                            <td>Penerbit</td>
+                            <td>
+                                <button class="btn-edit"><i class="ri-edit-box-line"></i></button>
+                                <button class="btn-delete"><i class="ri-delete-bin-6-fill"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nomor">3</td>
+                            <td><img src=" ../img/SampulBuku/Maulida_Azizah_dan_Ummu_Rahayu.png" alt=""></td>
+                            <td>Al-qura'an Hadist X</td>
+                            <td>Pengarang</td>
+                            <td>Penerbit</td>
+                            <td>
+                                <button class="btn-edit"><i class="ri-edit-box-line"></i></button>
+                                <button class="btn-delete"><i class="ri-delete-bin-6-fill"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nomor">4</td>
+                            <td><img src=" ../img/SampulBuku/Perempuan-merah-lelaki-haru.png" alt=""></td>
+                            <td>Al-qura'an Hadist X</td>
+                            <td>Pengarang</td>
+                            <td>Penerbit</td>
+                            <td>
+                                <button class="btn-edit"><i class="ri-edit-box-line"></i></button>
+                                <button class="btn-delete"><i class="ri-delete-bin-6-fill"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nomor">5</td>
+                            <td><img src="../img/SampulBuku/Al-Quran-hadist-XII.png" alt=""></td>
+                            <td>Al-qura'an Hadist X</td>
+                            <td>Pengarang</td>
+                            <td>Penerbit</td>
+                            <td>
+                                <button class="btn-edit"><i class="ri-edit-box-line"></i></button>
+                                <button class="btn-delete"><i class="ri-delete-bin-6-fill"></i></button>
+                            </td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+
+
+    </div>
+    
+    </div>
+    
+</body>
+</html>
