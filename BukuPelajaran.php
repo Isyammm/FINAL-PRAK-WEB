@@ -175,7 +175,7 @@
 
    </section>
     <div  class="copyright">
-        <p> &copy 2024 Man satu Sinjai by nr_faiqtunnis</p>
+        <p> &copy 2025 Man satu Sinjai by hisyam_yassar</p>
     </div>
   
 
