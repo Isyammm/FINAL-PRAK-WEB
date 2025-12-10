@@ -290,7 +290,7 @@ $base_url = "http://localhost/perpustakaan_man1_aljamaly/";
                                 <p><i class="ri-phone-line">082346874142</i></p>
                                 <p><i class="ri-mail-line">man1sinjai@gmail.com</i></p>
                                 <p><i class="ri-school-line">Alamat Jalan, JL. Baronang 
-                                    <br>Kel. Lappan Kec. Sinjai Utara</i></p>
+                                    <br>Kel. Lappa Kec. Sinjai Utara</i></p>
                             </div>
                         </div>
                     </div>
@@ -299,7 +299,7 @@ $base_url = "http://localhost/perpustakaan_man1_aljamaly/";
             
        </section>
         <div  class="copyright">
-            <p> &copy 2024 Man satu Sinjai by nr_faiqtunnis</p>
+            <p> &copy 2025 MAN Satu Sinjai by hisyam_yassar</p>
         </div>
 
 </body>
