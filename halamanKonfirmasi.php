@@ -12,8 +12,8 @@
             <h2>Detail Peminjaman Anda:</h1>
             <div class="confirmation">
                 <h2>Pesanan Terkonfirmasi!</h2>
-                <p>Nama: Nur Faiqatunnisa</p>
-                <p>Email: nfaiqtunnis@gmail.com</p>
+                <p>Nama: Hisyam Yassar</p>
+                <p>Email: muhammadhisyamyassar@gmail.com</p>
                 <p>Buku: Al-Qura'an Hadist X</p>
                 <p>ID Pengambilan: <strong>123456789</strong></p>
                 <!-- <div class="qr-code">
@@ -57,7 +57,7 @@
         
    </section>
     <div  class="copyright">
-        <p> &copy 2024 Man satu Sinjai by nr_faiqtunnis</p>
+        <p> &copy 2025 Man satu Sinjai by hisyam_yassar</p>
     </div>
     
 </body>
