@@ -3,7 +3,6 @@ require 'config/DataBase.php';
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,15 +46,15 @@ require 'config/DataBase.php';
         </div>
   
         <nav class="navbar">
-          <a href="home.html#home" class="nav-link">Home</a>
-          <a href="home.html#about" class="nav-link">About</a>
-          <a href="home.html#Services" class="nav-link">Layanan</a>
-          <a href="BukuPelajaran.html" class="nav-link">E-Pustaka</a>
-          <a href="home.html#contac" class="nav-link">Contact</a>
+          <a href="home.php#home" class="nav-link">Home</a>
+          <a href="home.php#about" class="nav-link">About</a>
+          <a href="home.php#Services" class="nav-link">Layanan</a>
+          <a href="BukuPelajaran.php" class="nav-link">E-Pustaka</a>
+          <a href="home.php#contact" class="nav-link">Contact</a>
         </nav>
   
         <div class="icons">
-          <div class="ordernow"><a href="login.html">Login</a></div>
+          <div class="ordernow"><a href="login.php">Login</a></div>
           <div id="menubar" class="fas fa-bars"></div>
         </div>
     </header>
@@ -138,7 +137,7 @@ require 'config/DataBase.php';
         </div>
    </section>
     <div  class="copyright">
-        <p>  2024 &copy Man satu Sinjai nr_faiqtunnis</p>
+        <p>  2025 Hisyam Yassar</p>
     </div>
 </body>
 </html>
