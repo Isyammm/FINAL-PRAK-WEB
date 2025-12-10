@@ -39,12 +39,12 @@
           <a href="#home" class="nav-link">Home</a>
           <a href="#about" class="nav-link">About</a>
           <a href="#Services" class="nav-link">Layanan</a>
-          <a href="BukuPelajaran.html" class="nav-link">E-Pustaka</a>
-          <a href="#contac" class="nav-link">Contact</a>
+          <a href="#BukuPelajaran.html" class="nav-link">E-Pustaka</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </nav>
   
         <div class="icons">
-          <div class="ordernow"><a href="login.html">Login</a></div>
+          <div class="ordernow"><a href="login.php">Login</a></div>
           <div id="menubar" class="fas fa-bars"></div>
         </div>
       </header>
@@ -204,7 +204,7 @@
                                 <h3>Contact</h3>
                                 <p><i class="ri-phone-line">082346874142</i></p>
                                 <p><i class="ri-mail-line">man1sinjai@gmail.com</i></p>
-                                <p><i class="ri-school-line">Alamat Jalan, JL. BARONANG TAPPEE KEL. LAPPA KEC. SINJAI UTARART</i></p>
+                                <p><i class="ri-school-line">Alamat Jalan, JL. BARONANG TAPPEE KEL. LAPPA KEC. SINJAI UTARA</i></p>
                             </div>
                         </div>
                     </div>
@@ -213,7 +213,7 @@
             
        </section>
         <div  class="copyright">
-            <p> &copy 2024 Man satu Sinjai by nr_faiqtunnis</p>
+            <p> &copy 2025 Man satu Sinjai by hisyam_yassar</p>
         </div>
 
 </body>
